@@ -13,6 +13,24 @@ private Sneaker mySneaker;
     mySneaker = new Sneaker (8745, "Nike", "Running", 11.5, 2, 65.10);
     }
 
+    @Test
+    public void constructorTest () {
+        Integer expectedId = 8745;
+        String expectedBrand = "Nike";
+        String expectedSport = "Running";
+        Double expectedSize = 11.5;
+        Integer expectedQty = 2;
+        Double expectedPrice = 65.10;
+
+        Assert.assertEquals(expectedId, mySneaker.getId());
+        Assert.assertEquals(expectedBrand, mySneaker.getName());
+        Assert.assertEquals(expectedSport, mySneaker.getSport());
+        Assert.assertEquals(expectedSize, mySneaker.getSize());
+        Assert.assertEquals(expectedQty, mySneaker.getQty());
+        Assert.assertEquals(expectedPrice, mySneaker.getPrice());
+    }
+
+
 
     @Test
     public void setId() {

@@ -12,6 +12,21 @@ private Whiskey testWhiskey;
        testWhiskey = new Whiskey(5821, "JD", "1.75L", 3, 45D);
     }
 
+    @Test
+    public void constructorTest() {
+        Integer expectedId = 5821;
+        String expectedBrand = "JD";
+        String expectedSize = "1.75L";
+        Integer expectedQty = 3;
+        Double expectedPrice = 45.00;
+
+        Assert.assertEquals(expectedId, testWhiskey.getId());
+        Assert.assertEquals(expectedBrand, testWhiskey.getName());
+        Assert.assertEquals(expectedSize, testWhiskey.getSize());
+        Assert.assertEquals(expectedQty, testWhiskey.getQty());
+        Assert.assertEquals(expectedPrice, testWhiskey.getPrice());
+    }
+    
 
     @Test
     public void setId() {

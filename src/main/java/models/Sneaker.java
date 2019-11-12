@@ -2,15 +2,16 @@ package models;
 
 public class Sneaker {
     private Integer id;
-    private String name;
+    private String brand;
     private String sport;
     private Double size;
     private Integer qty;
     private Double price;
 
-    public Sneaker(Integer id, String name, String sport, Double size, Integer qty, Double price) {
+
+    public Sneaker(Integer id, String brand, String sport, Double size, Integer qty, Double price) {
         this.id = id;
-        this.name = name;
+        this.brand = brand;
         this.sport = sport;
         this.size = size;
         this.qty = qty;
@@ -27,11 +28,11 @@ public class Sneaker {
     }
 
     public String getName() {
-        return name;
+        return brand;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String brand) {
+        this.brand = brand;
     }
 
     public String getSport() {
