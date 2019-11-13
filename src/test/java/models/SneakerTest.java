@@ -4,13 +4,15 @@ package models;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import services.SneakerService;
 
 public class SneakerTest {
 private Sneaker mySneaker;
 
     @Before
-    public void setup() {
-    mySneaker = new Sneaker (8745, "Nike", "Running", 11.5, 2, 65.10);
+    public void setup()
+    {
+        mySneaker = new Sneaker (8745, "Nike", "Running", 11.5, 2, 65.10);
     }
 
     @Test
@@ -23,7 +25,7 @@ private Sneaker mySneaker;
         Double expectedPrice = 65.10;
 
         Assert.assertEquals(expectedId, mySneaker.getId());
-        Assert.assertEquals(expectedBrand, mySneaker.getName());
+        Assert.assertEquals(expectedBrand, mySneaker.getBrand());
         Assert.assertEquals(expectedSport, mySneaker.getSport());
         Assert.assertEquals(expectedSize, mySneaker.getSize());
         Assert.assertEquals(expectedQty, mySneaker.getQty());
@@ -45,15 +47,15 @@ private Sneaker mySneaker;
     }
 
     @Test
-    public void setName() {
+    public void setBrand() {
         // given (1)
         String expected = "Mr. Daniels";
 
         // when (2)
-        mySneaker.setName(expected);
+        mySneaker.setBrand(expected);
 
         // then (3)
-        Assert.assertEquals(expected, mySneaker.getName());
+        Assert.assertEquals(expected, mySneaker.getBrand());
     }
 
     @Test

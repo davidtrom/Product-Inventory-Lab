@@ -27,11 +27,11 @@ public class Sneaker {
         this.id = id;
     }
 
-    public String getName() {
+    public String getBrand() {
         return brand;
     }
 
-    public void setName(String brand) {
+    public void setBrand(String brand) {
         this.brand = brand;
     }
 
