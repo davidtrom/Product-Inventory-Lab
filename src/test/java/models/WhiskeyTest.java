@@ -21,7 +21,7 @@ private Whiskey testWhiskey;
         Double expectedPrice = 45.00;
 
         Assert.assertEquals(expectedId, testWhiskey.getId());
-        Assert.assertEquals(expectedBrand, testWhiskey.getName());
+        Assert.assertEquals(expectedBrand, testWhiskey.getBrand());
         Assert.assertEquals(expectedSize, testWhiskey.getSize());
         Assert.assertEquals(expectedQty, testWhiskey.getQty());
         Assert.assertEquals(expectedPrice, testWhiskey.getPrice());
@@ -41,15 +41,15 @@ private Whiskey testWhiskey;
     }
 
     @Test
-    public void setName() {
+    public void setBrand() {
         // given (1)
         String expected = "Mr. Daniels";
 
         // when (2)
-        testWhiskey.setName(expected);
+        testWhiskey.setBrand(expected);
 
         // then (3)
-        Assert.assertEquals(expected, testWhiskey.getName());
+        Assert.assertEquals(expected, testWhiskey.getBrand());
     }
 
 

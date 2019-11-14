@@ -2,15 +2,15 @@ package models;
 
 public class Whiskey {
     private Integer id;
-    private String name;;
+    private String brand;;
     private String size;
     private Integer qty;
     private Double price;
 
 
-    public Whiskey(Integer id, String name, String size, Integer qty, Double price) {
+    public Whiskey(Integer id, String brand, String size, Integer qty, Double price) {
         this.id = id;
-        this.name = name;
+        this.brand = brand;
         this.size = size;
         this.qty = qty;
         this.price = price;
@@ -24,12 +24,12 @@ public class Whiskey {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getBrand() {
+        return brand;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setBrand(String name) {
+        this.brand = brand;
     }
 
     public String getSize() {

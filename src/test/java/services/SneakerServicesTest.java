@@ -10,10 +10,8 @@ private Sneaker testSneaker;
 
     @Before
     public void setup() {
-
         SneakerService sneakerService = new SneakerService();
         testSneaker =  new Sneaker(875, "Vans", "Tennis", 11.5, 1, 54D);
-
     }
 
     @Test
@@ -40,7 +38,6 @@ private Sneaker testSneaker;
 
         // (4)
         Assert.assertEquals(Integer.class.getName(), new Integer(actualId).getClass().getName());
-        Assert.assertEquals(expectedBrand, actualBrand);
         Assert.assertEquals(expectedBrand, actualBrand);
         Assert.assertEquals(expectedSport, actualSport);
         Assert.assertEquals(expectedSize, actualSize);
